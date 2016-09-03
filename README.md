@@ -9,3 +9,8 @@ The steps of the tutorial can be found as commits. Each commit has a tag matchin
 -------------
 
 Add a functional component for the React app. 
+
+1.2-search-bar
+--------------
+
+Add search bar to the page.

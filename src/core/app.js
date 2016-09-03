@@ -1,7 +1,11 @@
 import React from 'react';
 
+import SearchBar from '../components/search_bar';
+
 const App = () => (
-  <h1>This is a functional React app!</h1>
+  <div>
+    <SearchBar />
+  </div>
 );
 
 export default App;
