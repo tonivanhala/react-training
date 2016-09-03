@@ -19,3 +19,8 @@ Add search bar to the page.
 -------------------
 
 Add state to search bar by changing it into a managed component. 
+
+1.4-app-state
+-------------
+
+Change App into a class-based component. Manage app state in App. Pass a callback function to SearchBar to allow updates to state. 
