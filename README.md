@@ -14,3 +14,8 @@ Add a functional component for the React app.
 --------------
 
 Add search bar to the page.
+
+1.3-component-state
+-------------------
+
+Add state to search bar by changing it into a managed component. 
