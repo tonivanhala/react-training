@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SearchBar from '../components/search_bar';
+import SearchHistory from '../components/search_history';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,6 +26,9 @@ class App extends React.Component {
       <div>
         <SearchBar
           onSearch={ searchTerm => this.onSearch(searchTerm) }
+        />
+        <SearchHistory
+          history={ this.state.searchHistory }
         />
       </div>
     );

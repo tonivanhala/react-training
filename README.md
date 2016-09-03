@@ -24,3 +24,8 @@ Add state to search bar by changing it into a managed component.
 -------------
 
 Change App into a class-based component. Manage app state in App. Pass a callback function to SearchBar to allow updates to state. 
+
+1.5-list-rendering 
+------------------
+
+Add component to show search history by rendering a list. Use ES5 map function of Array instance. 
