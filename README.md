@@ -29,3 +29,8 @@ Change App into a class-based component. Manage app state in App. Pass a callbac
 ------------------
 
 Add component to show search history by rendering a list. Use ES5 map function of Array instance. 
+
+1.6-rest-query
+--------------
+
+Fetch search results from AudioScrobbler API. Show results in Bootstrap panels. 
