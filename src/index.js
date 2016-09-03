@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './core/app';
+
 ReactDOM.render(
   (
-    <h1>I love React!</h1>
+    <App />
   ), document.querySelector('#app-container')
 );
