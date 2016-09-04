@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import { searchTrack } from '../core/actions';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -13,6 +16,7 @@ class SearchBar extends Component {
 
   onSubmit(evt) {
     evt.preventDefault();
+    this.props.searchTrack(this.state.searchTerm);
     this.props.onSearch(this.state.searchTerm);
     this.setState( { searchTerm: '' });
   }
@@ -35,4 +39,4 @@ class SearchBar extends Component {
   }
 }
 
-export default SearchBar;
+export default connect(null, { searchTrack })(SearchBar);

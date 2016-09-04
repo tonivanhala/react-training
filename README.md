@@ -34,3 +34,8 @@ Add component to show search history by rendering a list. Use ES5 map function o
 --------------
 
 Fetch search results from AudioScrobbler API. Show results in Bootstrap panels. 
+
+2.1-redux-actions
+-----------------
+
+Add Redux to project. Handle search with Redux action. Update search result list from Redux store. 

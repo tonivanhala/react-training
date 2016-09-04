@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 
 import SearchBar from '../components/search_bar';
 import SearchHistory from '../components/search_history';
@@ -24,16 +23,6 @@ class App extends React.Component {
       searchHistory: history,
     });
 
-    const lastFmUrl = `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${term}&api_key=${API_KEY}&format=json`;
-    axios.get(lastFmUrl).then(({data}) => {
-      this.setState(Object.assign(
-        {},
-        this.state,
-        {
-          trackResults: data.results.trackmatches.track
-        }
-      ))
-    });
   }
 
   render() { 
@@ -46,7 +35,6 @@ class App extends React.Component {
           history={ this.state.searchHistory }
         />
         <SearchResultList
-          results={ this.state.trackResults }
         />
       </div>
     );

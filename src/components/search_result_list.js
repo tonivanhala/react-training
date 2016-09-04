@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import _ from 'lodash';
 
-export default ({ results }) => (
+const SearchResultList = ({ results }) => (
   <div>
     {
       results.map(
@@ -31,3 +32,9 @@ export default ({ results }) => (
     }
   </div>
 );
+
+function mapStateToProps( {trackResults} ) {
+  return { results: trackResults };
+}
+
+export default connect(mapStateToProps)(SearchResultList);
