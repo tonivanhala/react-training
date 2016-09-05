@@ -69,3 +69,8 @@ Add subroute for displaying related tracks.
 ----------------
 
 Change route when performing search. Use an action creator.
+
+4.1-add-test
+------------
+
+Add Mocha, Chai and Enzyme for running tests. Define simple test for App rendering. 
