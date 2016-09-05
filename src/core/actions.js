@@ -1,3 +1,4 @@
+import { browserHistory } from 'react-router';
 import axios from 'axios';
 
 import API_KEY from '../api_key.txt';
@@ -21,6 +22,8 @@ export function searchTrack(trackName) {
 }
 
 export function performSearch(trackName) {
+  browserHistory.push('/');
+
   const lastFmUrl = `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${trackName}&api_key=${API_KEY}&format=json`;
   const request = axios.get(lastFmUrl);
 

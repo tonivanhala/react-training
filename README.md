@@ -59,3 +59,13 @@ Add React Router to the project.
 ------------------------
 
 Refactor SearchResultList into a reusable functional component. 
+
+3.3-add-subroute
+----------------
+
+Add subroute for displaying related tracks. 
+
+3.4-route-action 
+----------------
+
+Change route when performing search. Use an action creator.
