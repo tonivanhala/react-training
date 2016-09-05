@@ -54,3 +54,8 @@ Allow click on history item to redo search.
 --------------
 
 Add React Router to the project. 
+
+3.2-reusable-result-list
+------------------------
+
+Refactor SearchResultList into a reusable functional component. 
