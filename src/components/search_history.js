@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
- const SearchHistory = ({ history }) => (
+import { performSearch } from '../core/actions';
+
+ const SearchHistory = ({ history, performSearch }) => (
   <ul
     className="list-inline"
   >
@@ -10,6 +12,8 @@ import { connect } from 'react-redux';
         (item, i) => (
           <li
             key={`${item}-${i}`}
+            onClick={() => performSearch(item)}
+            style={{ cursor: 'pointer' }}
           >{item}</li>
         )
       )
@@ -21,4 +25,4 @@ function mapStateToProps({ history }) {
   return { history };
 }
 
-export default connect(mapStateToProps)(SearchHistory);
+export default connect(mapStateToProps, { performSearch })(SearchHistory);

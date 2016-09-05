@@ -44,3 +44,8 @@ Add Redux to project. Handle search with Redux action. Update search result list
 --------------------
 
 Remove global application state from App component. Add support for action creators with multiple actions. 
+
+2.3-reuse-action
+----------------
+
+Allow click on history item to redo search. 
