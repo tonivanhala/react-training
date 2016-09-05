@@ -49,3 +49,8 @@ Remove global application state from App component. Add support for action creat
 ----------------
 
 Allow click on history item to redo search. 
+
+3.1-add-router
+--------------
+
+Add React Router to the project. 
