@@ -39,3 +39,8 @@ Fetch search results from AudioScrobbler API. Show results in Bootstrap panels.
 -----------------
 
 Add Redux to project. Handle search with Redux action. Update search result list from Redux store. 
+
+2.2-multiple-actions
+--------------------
+
+Remove global application state from App component. Add support for action creators with multiple actions. 

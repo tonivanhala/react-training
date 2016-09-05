@@ -17,7 +17,6 @@ class SearchBar extends Component {
   onSubmit(evt) {
     evt.preventDefault();
     this.props.searchTrack(this.state.searchTerm);
-    this.props.onSearch(this.state.searchTerm);
     this.setState( { searchTerm: '' });
   }
 

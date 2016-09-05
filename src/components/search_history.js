@@ -1,6 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-export default ({ history }) => (
+ const SearchHistory = ({ history }) => (
   <ul
     className="list-inline"
   >
@@ -15,3 +16,9 @@ export default ({ history }) => (
     }
   </ul>
 );
+
+function mapStateToProps({ history }) {
+  return { history };
+}
+
+export default connect(mapStateToProps)(SearchHistory);
